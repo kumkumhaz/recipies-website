@@ -1,0 +1,17 @@
+window.addEventListener("load", () => {
+  if (window.location.pathname === "/liked_recipes.html") {
+    // If the user is on the "Liked Recipes" page, show the liked recipes
+    showLikedRecipes();
+  } else {
+    // If the user is on the "Recipes" page, set the "liked" class for the heart icons
+    likeButtons.forEach((likeButton, index) => {
+      const recipeObj = {
+        recipe: recipeItems[index].querySelector(".recipeHeading").textContent,
+      };
+      const likedRecipeIds = JSON.parse(localStorage.getItem("likedRecipeIds")) || [];
+      if (likedRecipeIds.includes(getRecipeId(recipeObj))) {
+        likeButton.classList.add("liked");
+      }
+    });
+  }
+});

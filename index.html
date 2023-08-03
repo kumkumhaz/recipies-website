@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <nav class="nav">
+           <div class="navbar">
+            <div class="leftNav">
+                <span class="name">Recipe</span>
+            </div>
+            
+            <div class="searchandmenu">
+                <div class="rightNav">
+                    <div class="menuItems">
+                        <a class="navmenu"id ="home" href="#home">Home</a>
+                        <a class="navmenu" id="recipe" href="#recipe">Recipe</a>
+                    </div>
+                    
+                    <div class="bookmark" id="bookmark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="searchBar">
+                    <input type="text" name="search" id="search"placeholder="search" class="hidden">
+                    <svg class = "searchicon" id="searchicon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                     </svg>   
+                </div>
+            </div>
+            <div class="burger">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+            </div>
+           </div>
+        </nav>
+
+    <div class="homepage" id="homepage">
+        <div class="banners">
+            <div class="slide">
+                <img src="accets/banner1.jpg" alt="">
+            </div>
+        </div>
+        <div class="bannertext">
+            <h1>Deliciously Simple</h1>
+            <p>Unleash Your Inner Chef with Our Recipe Website!</p>
+        </div>
+    </div>
+
+
+    <section class="favorite" id="favorite">
+        <div class="favheading" id="favheading">
+            <h1>My Favorites</h1></div>
+        <div id="likedRecipesContainer"></div>
+    </section>
+
+
+    <section class="recipies" id="recipies">
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Paneer Tikka</h1>
+                    <div class="recipeContent">
+                        <h2>Ingredients</h2>
+                        <div class="ingredients">
+                            <ul>
+                                <li>1. Paneer </li>
+                                <li>2. Hung curd</li>
+                                <li>3. Ginger-garlic paste</li>
+                                <li>4. Red chili powder</li>
+                                <li>5. Garam masala</li>
+                                <li>6. Turmeric powder</li>
+                                <li>7. Lemon juice</li>
+                            </ul>
+                            <ul>
+                                <li>8. Besan</li>
+                                <li>9. Onion</li>
+                                <li>10. Capsicum</li>
+                                <li>11. Tomato</li>
+                                <li>12. Salt</li>
+                                <li>13. Oil</li>
+                            </ul>
+                        </div>
+                        <h2>Recipe</h2>
+                        <p class="recipeProcess">In a mixing bowl, combine hung curd, ginger-garlic paste, red chili powder, garam masala, turmeric powder, lemon juice, besan, and salt. Mix well to form a marinade. Cut the paneer into cubes and add them to the marinade. Coat the paneer cubes evenly with the marinade. Cover the bowl and let it marinate in the refrigerator for at least 2 hours. Preheat the grill or oven to medium-high heat. Thread the marinated paneer cubes, onion rings, bell pepper rings, and tomato rings onto the skewers alternately. Place the skewers on the grill or on a baking tray in the oven. Brush some oil over the paneer and vegetables. Grill or bake the paneer skewers for about 10-15 minutes or until the paneer turns golden brown and slightly charred at the edges. Serve the hot and delicious paneer tikka with mint chutney and lemon wedges.</p>
+                    </div>
+                </div>
+                <div class="reciperight">
+                    <img src="accets/paneertikka.jpg" alt="recipeimg">
+                </div>
+            </div>
+        </div>
+        
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Kadhai Paneer</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Paneer </li>
+                        <li>2. Garam masala</li>
+                        <li>3. Salt</li>
+                        <li>4. Kashmiri mirch</li>
+                        <li>5. Onion</li>
+                    </ul>
+                    <ul>
+                        <li>6. Capsicum</li>
+                        <li>7. Tomato</li>
+                        <li>8. Ginger</li>
+                        <li>9. Garlic</li>
+                        <li>10. Green chilies</li>
+                    </ul>
+
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Cut the paneer into cubes and set aside.
+                        Dice the onions, capsicum, tomatoes, ginger, garlic, and green chilies.
+                        Sauté onions, ginger, garlic, and green chilies until fragrant.
+                        Add tomatoes and spices, cook until oil separates.
+                        Add capsicum and cook for a few minutes.
+                        Gently mix in the paneer cubes.
+                        Garnish with fresh coriander leaves.
+                        Serve hot with naan, roti, or steamed rice.
+                             </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/kadhaipaneer.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">MOMOs</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Pneer</li>
+                        <li>2. Garam mashala</li>
+                        <li>3. Salt
+                        <li>4. Kashmiri mirch</li>
+                        <li>5. Onion</li>
+                      </ul>
+                      <ul>
+                        <li>6. Pneer</li>
+                        <li>7. Garam mashala</li>
+                        <li>8. Salt
+                        <li>9. Kashmiri mirch</li>
+                        <li>10. Onion</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad explicabo, quasi possimus libero quas recusandae fugiat necessitatibus maiores odio dolorem nesciunt reprehenderit iure voluptatem praesentium vero sed! Molestiae, ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure officiis dolor cum nostrum ipsa distinctio saepe, pariatur illum a. Nam aspernatur at facere similique dolorem tenetur ipsa, consectetur modi cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti sit quisquam molestias possimus laboriosam aliquid ipsam voluptatibus repellat odio, ut eveniet. Deserunt quod consequatur explicabo quia. Cum, architecto eligendi.
+                    </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/momo.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Orange Juice</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Garam mashala</li>
+                        <li>2. Salt</li>
+                        <li>3. Kashmiri mirch</li>
+                        <li>4. Onion</li>
+                      </ul>
+                      <ul>
+                        <li>5. Pneer</li>
+                        <li>6. Tomato</li>
+                        <li>7. Ginger</li>
+                        <li>8. Garlic</li>
+                        <li>9. Green chilies</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">  In a mixing bowl, add the finely chopped onions, tomatoes, ginger, garlic, green chilies, and capsicum.
+                        Crumble the paneer and add it to the bowl with the vegetables.
+                        Sprinkle garam masala, salt, and Kashmiri mirch over the mixture.
+                        Mix all the ingredients together until well combined.
+                        Take the MOMO wrappers and place a spoonful of the mixture in the center of each wrapper.
+                        Fold the wrappers over the mixture and shape them into MOMOs of your desired shape (such as crescent-shaped or round).
+                        Steam the MOMOs in a steamer for about 10-15 minutes or until they are cooked and the wrappers turn translucent.
+                        Serve the hot MOMOs with your favorite dipping sauce, such as spicy tomato chutney or soy-garlic sauce.
+                     </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/orangejuice.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Watermelon Juice</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Watermelon</li>
+                        <li>2. Lemon juice</li>
+                        <li>3. Sugar or honey</li>
+                        <li>4. Kashmiri mirch</li>
+                        <li>5. Ice Cubes</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Blend watermelon cubes and lemon juice until smooth.
+                        Optional: Add sugar or honey for extra sweetness.
+                        Strain the juice to remove pulp and seeds.
+                        Serve over ice.
+                    </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/watermelonjuice.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Burger</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Ground Beef</li>
+                        <li>2. Black pepper</li>
+                        <li>3. Salt</li>
+                        <li>4. hamburger buns</li>
+                        <li>5. Cheese</li>
+                      </ul>
+                      <ul>
+                        <li>6. Tomato</li>
+                        <li>7. Ketchup</li>
+                        <li>8. Mayonnaise</li>
+                        <li>9. Pickles</li>
+                        <li>10. Mustard</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Preheat a grill or stovetop griddle over medium-high heat.
+                        In a bowl, season the ground beef with salt and black pepper. Mix well.
+                        Divide the seasoned beef into 4 equal portions and shape them into patties.
+                        Grill the burger patties for about 4-5 minutes per side or until they reach your desired level of doneness.
+                        If using cheese, add a slice of cheese on each patty during the last minute of cooking and allow it to melt.
+                        Toast the hamburger buns on the grill for about 1-2 minutes until lightly browned.
+                        Assemble the burgers by placing a lettuce leaf on the bottom half of each bun, followed by a burger patty with cheese (if using).
+                        Add sliced tomatoes, onions, and pickles on top of the patty.
+                        Spread ketchup, mustard, and mayonnaise on the top half of the buns.
+                        Place the top bun over the toppings to complete the burgers.
+                          </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/burger.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Burger King</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Pneer</li>
+                        <li>2. Garam mashala</li>
+                        <li>3. Salt
+                        <li>4. Kashmiri mirch</li>
+                        <li>5. Onion</li>
+                      </ul>
+                      <ul>
+                        <li>6. Pneer</li>
+                        <li>7. Garam mashala</li>
+                        <li>8. Salt
+                        <li>9. Kashmiri mirch</li>
+                        <li>10. Onion</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad explicabo, 
+                        quasi possimus libero quas recusandae fugiat necessitatibus maiores odio dolorem nesciunt reprehenderit iure voluptatem praesentium 
+                        vero sed! Molestiae, ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure officiis dolor cum nostrum ipsa distinctio saepe,
+                         pariatur illum a. Nam aspernatur at facere similique dolorem tenetur ipsa, consectetur modi cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti sit quisquam molestias possimus laboriosam aliquid ipsam voluptatibus repellat odio, ut eveniet. Deserunt quod consequatur explicabo quia. Cum, architecto eligendi.
+                    </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/burgerking.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Tomato Pizza</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Pizza Dough</li>
+                        <li>2. Pizza Sauce</li>
+                        <li>3. Mozzarella Cheese</li>
+                        <li>4. Toppings</li>
+                    </ul>
+                    <ul>
+                          <li>5. Olive oil</li>
+                        <li>6. Orgeno</li>
+                        <li>7. Red pepper flakes</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">   Preheat a grill or stovetop griddle over medium-high heat.
+                        In a bowl, season the ground beef with salt and black pepper. Mix well.
+                        Divide the seasoned beef into 4 equal portions and shape them into patties.
+                        Grill the burger patties for about 4-5 minutes per side or until they reach your desired level of doneness.
+                        If using cheese, add a slice of cheese on each patty during the last minute of cooking and allow it to melt.
+                        Toast the hamburger buns on the grill for about 1-2 minutes until lightly browned.
+                        Assemble the burgers by placing a lettuce leaf on the bottom half of each bun, followed by a burger patty with cheese (if using).
+                        Add sliced tomatoes, onions, and pickles on top of the patty.
+                        Spread ketchup, mustard, and mayonnaise on the top half of the buns.
+                        Place the top bun over the toppings to complete the burgers.
+                         </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/tomatopizza.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">French Fries</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Potatoes</li>
+                        <li>2. Vegetable oil</li>
+                        <li>3. Salt</li>
+                        <li>4. Seasonings</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Wash the potatoes thoroughly to remove any dirt or debris. Peel the potatoes if desired, but leaving the skin on can add extra texture and flavor.
+                        Cut the potatoes into evenly sized sticks or wedges. For best results, aim for about 1/4 to 1/2 inch in thickness.
+                        Place the cut potatoes in a bowl of cold water and let them soak for about 30 minutes. This helps remove excess starch and ensures crispier fries.
+                        After soaking, drain the potatoes and pat them dry with a clean kitchen towel or paper towels.
+                        Heat vegetable oil in a deep fryer or a large heavy-bottomed pot to around 350°F (175°C).
+                        Fry the potatoes in small batches to avoid overcrowding the fryer. Cook them for about 2-3 minutes until they are pale golden and slightly soft.
+                        Remove the partially cooked fries and place them on a paper towel-lined plate to drain excess oil.
+                        Increase the oil temperature to 375°F (190°C).
+                        Return the partially cooked fries to the hot oil and fry them again in batches for another 2-3 minutes or until they turn golden brown and crispy.
+                        Once done, remove the fries from the oil and place them on a fresh paper towel to drain any excess oil.
+                        Immediately season the hot fries with salt and any additional seasonings you prefer.                          </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/frenchfrys.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Chicken Dry</h1>
+                 <div class="recipeContent">
+                    <h2>Ingredients</h2>
+                   <div class="ingredients">
+                    <ul>
+                        <li>1. Chicken</li>
+                        <li>2. Tomatoes</li>
+                        <li>3. Salt</li>
+                        <li>4. Kashmiri mirch</li>
+                        <li>5. Onion</li>
+                        <li>6. Ginger-garlic paste</li>
+                        <li>7. Green chilies</li>
+                      </ul>
+                      <ul>
+                        <li>8. Turmeric powder</li>
+                        <li>9. Garam mashala </li>
+                        <li>10. Cumin powder</li>
+                        <li>11. Coriander powder</li>
+                        <li>12. Black pepper powder</li>
+                        <li>13. Cooking oil</li>
+                      </ul>
+                   </div>
+                    <h2 >Recipe</h2>
+                    <p class="recipeProcess">Marinate the chicken pieces with yogurt, ginger-garlic paste, turmeric powder, red chili powder, and salt. Let it sit for at least 30 minutes.
+                        Heat oil or ghee in a heavy-bottomed pan or pot over medium heat. Add chopped onions and sauté until they become golden brown.
+                        Add the marinated chicken to the pan and cook for about 10 minutes, stirring occasionally, until the chicken changes color.                        
+                        Add the tomato puree, green chilies, cumin powder, coriander powder, and black pepper powder. Mix well and cook for another 5 minutes.
+                       Reduce the heat to low, cover the pan, and let the chicken cook for about 20-25 minutes until it becomes tender and the oil separates from the gravy.                       
+                        Sprinkle garam masala and chopped coriander leaves on top. Stir gently to combine.
+                        Remove from heat and serve hot with naan, roti, or rice..  </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/chickendry.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+        <div class="recipeItem" id="recipeItem">
+            <div class="like" id="like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </div>
+            <div class="recipewrapper">
+                <div class="recipeleft">
+                    <h1 class="recipeHeading" id="recipeHeading">Chowmein</h1>
+                    <div class="recipeContent">
+                        <h2>Ingredients</h2>
+                        <div class="ingredients">
+                            <ul>
+                                <li>1. Chowmein noodles </li>
+                                <li>2. Mixed vegetables</li>
+                                <li>3. Onion </li>
+                                <li>4. Garlic</li>
+                                <li>5. Soy sauce</li>
+                            </ul>
+                            <ul>
+                                <li>6. Vinegar </li>
+                                <li>7. Red chili sauce</li>
+                                <li>8. Oil </li>
+                                <li>9. Salt</li>
+                                <li>10. Black pepper powder</li>
+                            </ul>
+                        </div>
+                        <h2>Recipe</h2>
+                        <p class="recipeProcess">
+                            Boil the chowmein noodles in salted water until they are cooked al dente. Drain and set aside.
+                            In a wok or large pan, heat oil and add minced garlic. Sauté for a minute until fragrant.
+                            Add sliced onions and julienned vegetables. Stir-fry on high heat until they are partially cooked yet retain their crunch.
+                            Add the boiled chowmein noodles to the vegetables.
+                            Pour soy sauce, vinegar, and red chili sauce over the noodles. Toss everything together.
+                            Season with salt and black pepper powder according to your taste.
+                            Cook for another 2-3 minutes until the flavors are well combined.
+                            Serve hot and enjoy the delicious Chowmein!
+                        </p>
+                 </div>
+                </div>
+                <div class="reciperight">
+                    <img  src="accets/choumin.jpg" alt="recipeimg" >
+                </div>
+            </div>
+        </div>
+<div class="recipeItem" id="recipeItem">
+    <div class="like" id="like">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+    </div>
+    <div class="recipewrapper">
+        <div class="recipeleft">
+            <h1 class="recipeHeading" id="recipeHeading">Tandoori Chicken</h1>
+            <div class="recipeContent">
+                <h2>Ingredients</h2>
+                <div class="ingredients">
+                    <ul>
+                        <li>1. Chicken legs or thighs</li>
+                        <li>2. Hung curd</li>
+                        <li>3. Ginger-garlic paste</li>
+                        <li>4. Red chili powder</li>
+                        <li>5. Turmeric powder</li>
+                    </ul>
+                    <ul>
+                        <li>6. Garam masala</li>
+                        <li>7. Lemon juice</li>
+                        <li>8. Mustard oil</li>
+                        <li>9. Salt</li>
+                        <li>10. Skewers</li>
+                    </ul>
+                </div>
+                <h2>Recipe</h2>
+                <p class="recipeProcess">
+                    Clean and wash the chicken pieces. Make deep cuts on the flesh to allow the marinade to penetrate.
+                    In a bowl, mix hung curd, ginger-garlic paste, red chili powder, turmeric powder, garam masala, lemon juice, and mustard oil to make the marinade.
+                    Coat the chicken pieces with the marinade, making sure it gets into the cuts as well.
+                    Cover the bowl with plastic wrap and refrigerate for 4-6 hours or overnight to marinate.
+                    Preheat the grill or oven to medium-high heat.
+                    Thread the marinated chicken pieces onto the skewers.
+                    Grill the tandoori chicken skewers until they are charred and cooked through, turning them occasionally.
+                    Serve hot with mint chutney and onion rings. Enjoy the flavorful Tandoori Chicken!
+                </p>
+            </div>
+        </div>
+        <div class="reciperight">
+            <img src="accets/chicken tandoori.jpg" alt="recipeimg">
+        </div>
+    </div>
+</div>
+<!-- Recipe for Classic Margherita Pizza -->
+<div class="recipeItem" id="recipeItem">
+    <div class="like" id="like">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+    </div>
+    <div class="recipewrapper">
+        <div class="recipeleft">
+            <h1 class="recipeHeading" id="recipeHeading">Classic Margherita Pizza</h1>
+            <div class="recipeContent">
+                <h2>Ingredients</h2>
+                <div class="ingredients">
+                    <ul>
+                        <li>1. Pizza dough</li>
+                        <li>2. Tomatoes</li>
+                        <li>3. Mozzarella cheese </li>
+                        <li>4. Basil leaves</li>
+                        <li>5. Olive oil</li>
+                    </ul>
+                </div>
+                <h2>Recipe</h2>
+                <p class="recipeProcess">
+                    Preheat your oven to the highest temperature possible (usually 500°F or 260°C).
+                    Roll out the pizza dough into a thin crust and place it on a pizza stone or baking sheet.
+                    Drizzle olive oil over the pizza crust.
+                    Arrange the thinly sliced tomatoes and fresh mozzarella cheese on the crust.
+                    Bake the pizza in the preheated oven until the crust is golden and the cheese is bubbly and slightly browned.
+                    Remove the pizza from the oven and top it with fresh basil leaves.
+                    Slice and serve the Classic Margherita Pizza hot!
+                    Enjoy the simple yet delicious flavors of this classic pizza.
+                </p>
+            </div>
+        </div>
+        <div class="reciperight">
+            <img src="accets/marhgerita pizzza.jpg" alt="recipeimg">
+        </div>
+    </div>
+</div>
+
+<div class="recipeItem" id="recipeItem">
+    <div class="like" id="like">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+    </div>
+    <div class="recipewrapper">
+        <div class="recipeleft">
+            <h1 class="recipeHeading" id="recipeHeading">Vegetable Fried Rice</h1>
+            <div class="recipeContent">
+                <h2>Ingredients</h2>
+                <div class="ingredients">
+                    <ul>
+                        <li>1. Cooked rice/li>
+                        <li>2. Mixed vegetables</li>
+                        <li>3. Onion</li>
+                        <li>4. Garlic</li>
+                        <li>5. Soy sauce</li>
+                    </ul>
+                    <ul>
+                        <li>6. Sesame oil</li>
+                        <li>7. Green onions</li>
+                        <li>8. Salt </li>
+                        <li>9. Black pepper powder</li>
+                        <li>10. Vegetable oil </li>
+                    </ul>
+                </div>
+                <h2>Recipe</h2>
+                <p class="recipeProcess">
+                    Heat vegetable oil in a wok or large pan over medium-high heat.
+                    Add chopped onions and minced garlic. Sauté until the onions become translucent.
+                    Add mixed vegetables to the wok and stir-fry until they are slightly cooked but still retain their crunch.
+                    Push the vegetables to one side of the wok and add the cooked rice to the other side.
+                    Drizzle sesame oil and soy sauce over the rice and toss everything together.
+                    Season the fried rice with salt and black pepper powder according to your taste.
+                    Add chopped green onions (spring onions) and give it a final toss.
+                    Serve the delicious Vegetable Fried Rice hot and enjoy!
+                </p>
+            </div>
+        </div>
+        <div class="reciperight">
+            <img src="accets/fried rice.jpg" alt="recipeimg">
+        </div>
+    </div>
+</div>
+<!-- Recipe for Pasta Alfredo -->
+<div class="recipeItem" id="recipeItem">
+    <div class="like" id="like">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+    </div>
+    <div class="recipewrapper">
+        <div class="recipeleft">
+            <h1 class="recipeHeading" id="recipeHeading">Pasta</h1>
+            <div class="recipeContent">
+                <h2>Ingredients</h2>
+                <div class="ingredients">
+                    <ul>
+                        <li>1. Pasta</li>
+                        <li>2. Butter</li>
+                        <li>3. Heavy cream</li>
+                        <li>4. Garlic</li>
+                        <li>5. Grated Parmesan cheese </li>
+                    </ul>
+                    <ul>
+                        <li>6. Salt</li>
+                        <li>7. Black pepper powder</li>
+                        <li>8. Fresh parsley</li>
+                        <li>9. Olive oil</li>
+                    </ul>
+                </div>
+                <h2>Recipe</h2>
+                <p class="recipeProcess">
+                    Boil water in a large pot and add a pinch of salt. Cook the pasta according to the package instructions until it's al dente. Drain and set aside.
+                    In a separate pan, melt butter over medium heat. Add minced garlic and sauté until fragrant.
+                    Pour heavy cream into the pan and let it come to a simmer.
+                    Stir in grated Parmesan cheese and mix until the cheese is melted and the sauce is smooth.
+                    Season the sauce with salt and black pepper powder.
+                    Add the cooked pasta to the sauce and toss until the pasta is evenly coated.
+                    Garnish with fresh parsley and drizzle olive oil on top.
+                    Serve the creamy and delicious Pasta Alfredo hot!
+                </p>
+            </div>
+        </div>
+        <div class="reciperight">
+            <img src="accets/pasta.jpg" alt="recipeimg">
+        </div>
+    </div>
+</div>
+<div class="recipeItem" id="recipeItem">
+    <div class="like" id="like">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+    </div>
+    <div class="recipewrapper">
+        <div class="recipeleft">
+            <h1 class="recipeHeading" id="recipeHeading">Aloo Gobi</h1>
+            <div class="recipeContent">
+                <h2>Ingredients</h2>
+                <div class="ingredients">
+                    <ul>
+                        <li>1. Potatoes</li>
+                        <li>2. Cauliflower</li>
+                        <li>3. Onion</li>
+                        <li>4. Tomatoes</li>
+                        <li>5. Ginger-garlic paste</li>
+                        <li>6. Turmeric powder</li>
+                    </ul>
+                    <ul>
+                        <li>7. Red chili powder</li>
+                        <li>8. Garam masala</li>
+                        <li>9. Cumin seeds</li>
+                        <li>10. Cooking oil</li>
+                        <li>11. Coriander leaves</li>
+                        <li>12. Salt</li>
+                    </ul>
+                </div>
+                <h2>Recipe</h2>
+                <p class="recipeProcess">
+                    Heat oil in a pan and add cumin seeds. Sauté until they splutter.
+                    Add chopped onions and cook until they turn golden brown.
+                    Stir in the ginger-garlic paste and cook for a minute.
+                    Add chopped tomatoes, turmeric powder, red chili powder, and salt. Cook until the tomatoes become soft and oil starts to separate.
+                    Add diced potatoes and cauliflower florets. Mix well to coat them with the spices.
+                    Cover and cook on low heat until the potatoes and cauliflower are tender.
+                    Sprinkle garam masala and garnish with chopped coriander leaves.
+                    Serve hot Aloo Gobi with roti, paratha, or rice. Enjoy the delicious and comforting Indian curry!
+                </p>
+            </div>
+        </div>
+        <div class="reciperight">
+            <img src="accets/aloo gobhi.jpg" alt="recipeimg">
+        </div>
+    </div>
+</div>
+
+<div class="recipeItem" id="recipeItem">
+    <div class="like" id="like">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+    </div>
+    <div class="recipewrapper">
+        <div class="recipeleft">
+            <h1 class="recipeHeading" id="recipeHeading">Paneer Butter Masala</h1>
+            <div class="recipeContent">
+                <h2>Ingredients</h2>
+                <div class="ingredients">
+                    <ul>
+                        <li>1. Paneer</li>
+                        <li>2. Tomatoes, pureed</li>
+                        <li>3. Onions</li>
+                        <li>4. Ginger-garlic paste</li>
+                        <li>5. Cashew nuts</li>
+                        <li>6. Fresh cream</li>
+                        <li>7. Butter</li>
+                        <li>8. Cumin seeds</li>
+                        <li>9. Red chili powder</li>
+                        <li>10. Turmeric powder</li>
+                    </ul>
+                    <ul>
+                        <li>11. Garam masala</li>
+                        <li>12. Kasuri methi</li>
+                        <li>13. Sugar</li>
+                        <li>14. Salt</li>
+                        <li>15. Water</li>
+                        <li>16. Fresh coriander leaves</li>
+                        <li>17. Green chilies</li>
+                    </ul>
+                </div>
+                <h2>Recipe</h2>
+                <p class="recipeProcess">
+                    Heat butter in a pan and add cumin seeds. Sauté until they splutter.
+                    Add chopped onions and cook until they turn translucent.
+                    Stir in the ginger-garlic paste and cook for a minute.
+                    Add the pureed tomatoes and cook until the oil starts to separate.
+                    In a blender, blend soaked cashew nuts with some water to make a smooth paste.
+                    Add the cashew paste, red chili powder, turmeric powder, garam masala, kasuri methi, sugar, and salt to the pan. Mix well and cook for a few minutes.
+                    Pour in the fresh cream and mix it in gently.
+                    Add the paneer cubes and sliced green chilies (if using). Simmer for a few minutes until the flavors blend together.
+                    Garnish with chopped coriander leaves.
+                    Serve hot Paneer Butter Masala with naan, roti, or rice. Enjoy the rich and creamy vegetarian delight!
+                </p>
+            </div>
+        </div>
+        <div class="reciperight">
+            <img src="accets/paneer butter mashala.jpg" alt="recipeimg">
+        </div>
+    </div>
+</div>
+
+    </section>
+    <footer class="footer background">
+        <p>Copyright © 2023-All rights reversed</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

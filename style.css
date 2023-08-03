@@ -1,0 +1,365 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(212, 166, 113);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 75%;
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 400;
+  }
+.name{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.searchBar{
+    display: flex;
+    margin-right: 15px;
+    margin-top: 20px;
+    padding-bottom: 17px;
+}
+.searchBar input{
+    background-color: transparent;
+    display: none;
+}
+.rightNav,
+.searchandmenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+}
+.menuItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 8%;
+    top: 25px;
+}
+.line{
+    width: 17px;
+    background-color: black;
+    height: 2px;
+    margin: 2px 2px;
+}
+.bookmark{
+    margin-top: 13px;
+    margin-right: 22px;
+    margin-left: 0;
+}
+.menuItems a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-right: 22px;
+    
+}
+
+.menuItemsdropdown,
+.vegitems,
+.nonvegitems{
+    display: none;
+}
+
+#search, .btn-sm{
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 2%;
+}
+.btn-sm a{
+   text-decoration: none;
+   color: gray;
+}
+#search:hover{
+    border: 2px solid green;
+}
+
+.slide{
+    width: 100%;
+    height: 670px;
+    margin: auto;
+    position: relative;
+}
+.slide img{
+    width: 100%;
+    height: 670px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+.bannertext{
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+.bannertext h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+}
+.bannertext p{
+   font-family: 'Dancing Script', cursive;
+   font-size: 35px;
+   font-weight: 700;
+   position: absolute;
+   top: 130%;
+   left: 10%;
+}
+
+
+.favorite{
+    min-height: 77vh;
+    text-align: center;
+}
+.favorite h1{
+    font-family: 'Pacifico', cursive;
+    color: red;
+}
+section{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2%;
+}
+
+.recipeItem{
+    background-color: rgb(245, 216, 216);
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 3%;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.like{
+    text-align: right;
+}
+.recipewrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.recipeItem h2{
+    padding: 10px;
+}
+.recipeleft{
+    width: 60%;
+    text-align: justify;
+}
+.reciperight{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reciperight img{
+   width: 100%;
+   height: 100%;
+   border-radius: 5%;
+   flex-wrap: wrap;
+   transition: ease-in-out 0.2s;
+
+}
+.reciperight img:hover{
+    transform: scale(1.04);
+    transition: ease-in-out 0.2s;
+}
+.recipeHeading{
+    font-size: 28px;
+    line-height: 2rem;
+    letter-spacing: -1px;
+}
+.recipeProcess{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.ingredients{
+    width: 50%;
+    display: flex;
+    padding-left: 3%;
+    justify-content: space-between;
+}
+.recipeContent{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.recipeContent ul li{
+    list-style-type: none;
+}
+
+.footer{
+    border-top:2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.footer p{
+    padding: 0.5rem;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+  .like {
+    cursor: pointer;
+  }
+
+  .liked svg {
+    fill: red;
+}
+.favorite{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){ 
+    .recipewrapper{
+        flex-direction: column-reverse;
+         max-width: 100%;      
+    }  
+    .recipeItem{
+    }
+    .recipeItem h2{
+        font-size: 20;
+    }
+    .recipeleft{
+        width: 95%;
+    } 
+    .ingredients{
+        width: 60%;
+    } 
+    .reciperight{
+        width: 50%;
+    } 
+    .reciperight img{
+       width: 100%;
+       height: 100%;   
+       margin-bottom: 20px;    
+    }    
+    .recipeHeading{
+        font-size: 25px;
+    }
+    .recipeProcess{
+        font-size: 15px;
+    }
+   .recipeContent{
+    font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }   
+}
+
+@media only screen and (max-width: 680px){
+    .navbar{
+        height: 3.7rem;
+        width: 100%;
+        margin-right: 10%;
+
+    }
+    .rightNav{
+        padding-left: 10px;
+        margin-top: 165px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(212, 166, 113);
+    }   
+    .rightNav {
+        display: none;
+      }
+      
+      .rightNav.show {
+        display: flex;
+      }
+        
+    .searchandmenu{
+        flex-direction: row-reverse;
+    }
+    .burger{
+        display: block;
+    }
+    .menuItems{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.7rem;
+    }
+
+    .searchBar{
+        margin-top: 20px;
+        padding-bottom: 17px;
+        margin-right: 50px;
+    }
+    .bookmark{
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        padding-left: 45%;
+    }
+   
+    .name{
+        font-size: 2rem;
+    }
+    .bannertext {
+        width: 100%;
+        top: 40%;
+        left: 0;
+        text-align: center;
+      }
+    
+      .bannertext h1 {
+        font-size: 35px;
+      }
+    
+      .bannertext p {
+        font-size: 23px;
+        top: 110%;
+        left: 0;
+
+      }
+    .reciperight{
+        width: 90%;
+    }      
+     .recipeHeading{
+         font-size: 23px;
+     }
+     .ingredients{
+        width: 80%;
+        font-size: 13px;
+    } 
+     .recipeProcess{
+         font-size: 13px;
+     }
+    .recipeContent{
+     font-size: 14px;
+     } 
+}
+
+
+
